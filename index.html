@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lámpara de Lava</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <svg class="svg-filter-hidden">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+
+    <svg class="christmas-decor decor-tl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 14 6 17 7C20 8 22 6 22 6C22 6 21 9 21 12C21 15 22 18 22 18C22 18 20 16 17 17C14 18 12 22 12 22C12 22 10 18 7 17C4 16 2 18 2 18C2 18 3 15 3 12C3 9 2 6 2 6C2 6 4 8 7 7C10 6 12 2 12 2Z" fill="#2e7d32"/><circle cx="12" cy="12" r="3" fill="#d32f2f"/><circle cx="9.5" cy="10" r="1.5" fill="#f44336"/><circle cx="14.5" cy="10" r="1.5" fill="#f44336"/><circle cx="12" cy="14.5" r="1.5" fill="#f44336"/></svg>
+    <svg class="christmas-decor decor-tr" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 14 6 17 7C20 8 22 6 22 6C22 6 21 9 21 12C21 15 22 18 22 18C22 18 20 16 17 17C14 18 12 22 12 22C12 22 10 18 7 17C4 16 2 18 2 18C2 18 3 15 3 12C3 9 2 6 2 6C2 6 4 8 7 7C10 6 12 2 12 2Z" fill="#2e7d32"/><circle cx="12" cy="12" r="3" fill="#d32f2f"/><circle cx="9.5" cy="10" r="1.5" fill="#f44336"/><circle cx="14.5" cy="10" r="1.5" fill="#f44336"/><circle cx="12" cy="14.5" r="1.5" fill="#f44336"/></svg>
+    <svg class="christmas-decor decor-bl" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 14 6 17 7C20 8 22 6 22 6C22 6 21 9 21 12C21 15 22 18 22 18C22 18 20 16 17 17C14 18 12 22 12 22C12 22 10 18 7 17C4 16 2 18 2 18C2 18 3 15 3 12C3 9 2 6 2 6C2 6 4 8 7 7C10 6 12 2 12 2Z" fill="#2e7d32"/><circle cx="12" cy="12" r="3" fill="#d32f2f"/><circle cx="9.5" cy="10" r="1.5" fill="#f44336"/><circle cx="14.5" cy="10" r="1.5" fill="#f44336"/><circle cx="12" cy="14.5" r="1.5" fill="#f44336"/></svg>
+    <svg class="christmas-decor decor-br" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 14 6 17 7C20 8 22 6 22 6C22 6 21 9 21 12C21 15 22 18 22 18C22 18 20 16 17 17C14 18 12 22 12 22C12 22 10 18 7 17C4 16 2 18 2 18C2 18 3 15 3 12C3 9 2 6 2 6C2 6 4 8 7 7C10 6 12 2 12 2Z" fill="#2e7d32"/><circle cx="12" cy="12" r="3" fill="#d32f2f"/><circle cx="9.5" cy="10" r="1.5" fill="#f44336"/><circle cx="14.5" cy="10" r="1.5" fill="#f44336"/><circle cx="12" cy="14.5" r="1.5" fill="#f44336"/></svg>
+
+    <header class="main-header">
+        <h1>Feliz navidad mi mosquita</h1>
+        <p>regalo con mucho amor y cariño</p>
+    </header>
+
+    <section class="lamp-section" id="lamp-section-container">
+        <div class="lava-lamp-container">
+            <div class="cap"></div>
+            <div class="glass">
+                <div class="liquid"></div>
+                <div class="blob-container">
+                    <div class="blob"></div><div class="blob"></div><div class="blob"></div><div class="blob"></div><div class="blob"></div>
+                </div>
+            </div>
+            <div class="base"></div>
+        </div>
+        <button id="color-change-btn">Presióname :D</button>
+    </section>
+
+    <section class="gallery-section">
+        
+        <div class="gallery-item">
+            <button class="gallery-trigger">
+                💗 1. El rosa
+                <span class="trigger-icon">▼</span>
+            </button>
+            <div class="gallery-content">
+                <div class="gallery-image-container">
+                    <img src="/sources/images/image.png" alt="Rosas rosadas">
+                </div>
+                <div class="gallery-text-container friendly-text">
+                    <h3>¿Por qué el rosa?</h3>
+                    <p>
+                    El rosa, a parte de ser tu color favorito. Es el color del amor incondicional, ternura y cuidado. Cada vez que lo veas, me gustaría que pienses en un ambiente c y
+                    no olvidar que te amo.     
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <button class="gallery-trigger">
+                💜 2. El violeta
+                <span class="trigger-icon">▼</span>
+            </button>
+            <div class="gallery-content">
+                <div class="gallery-image-container">
+                    <img src="/sources/images/image2.png" alt="Hortensias moradas">
+                </div>
+                <div class="gallery-text-container friendly-text">
+                    <h3>¿Por qué el violeta?</h3>
+                    <p>
+                        Elegí el violeta para esta lámpara porque es el color que define lo que siento cuando estoy contigo: una paz profunda que no se parece a nada más. Para mí, el violeta es el equilibrio perfecto entre la pasión del rojo y 
+                        la calma del azul; así es como me haces sentir, en un refugio donde todo fluye con tranquilidad.
+                        <p>Siempre que lo mires, recuerda que tú eres la que me da paz solamente con tu presencia.
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <button class="gallery-trigger">
+                🧡 3.  el Naranja
+                <span class="trigger-icon">▼</span>
+            </button>
+            <div class="gallery-content">
+                <div class="gallery-image-container">
+                    <img src="/sources/images/image3.png" alt="Flor pensamiento morada y amarilla">
+                </div>
+                <div class="gallery-text-container friendly-text">
+                    <h3>¿Por qué el naranja?</h3>
+                    <p>Elegí el naranja porque, si el violeta es mi paz, el naranja es mi alegría. Es el color que representa la energía que me das y cómo iluminas todo cuando te ríes.
+                    Me encanta tu sonrisa y me gustaría verla todos los días si no te molesta.                        
+                    </p>
+                    <a href="https://www.canva.com/design/DAG8d3NQI5s/B86nvIRCQCgJbipgksJW-Q/edit?utm_content=DAG8d3NQI5s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                    ^^
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div> 
+    </div>
+    <script>
+        // --- LÓGICA DE LA LÁMPARA ---
+        const lampSection = document.getElementById('lamp-section-container');
+        const btn = document.getElementById('color-change-btn');
+
+        // Paletas de colores: Incluye el NARANJA como opción, pero no es el inicial
+        const colorPalettes = [
+            { // 1. Violeta
+                primary: '#9370db', secondary: '#e6e6fa', glow: '#8a2be2', bg: '#110022'
+            },
+
+            { // 2. NARANJA (Incluido en la rotación)
+                primary: '#ff9933', secondary: '#ffcc80', glow: '#ff5500', bg: '#2b1a0e'
+            },
+            { // 3. Volver a Rosa (Estado inicial)
+                primary: '#ff69b4', secondary: '#ffb6c1', glow: '#ff1493', bg: '#330011'
+            }
+        ];
+        
+        let currentColorIndex = -1;
+
+        btn.addEventListener('click', () => {
+            currentColorIndex = (currentColorIndex + 1) % colorPalettes.length;
+            const nextColor = colorPalettes[currentColorIndex];
+            
+            lampSection.style.setProperty('--lamp-primary', nextColor.primary);
+            lampSection.style.setProperty('--lamp-secondary', nextColor.secondary);
+            lampSection.style.setProperty('--lamp-glow', nextColor.glow);
+            lampSection.style.setProperty('--lamp-bg', nextColor.bg);
+        });
+
+        // --- LÓGICA DE LA GALERÍA ---
+        const triggers = document.querySelectorAll('.gallery-trigger');
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const item = trigger.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+    </script>
+
+</body>
+</html>
